@@ -21,3 +21,9 @@ Route::get('/formLogin', 'App\Http\Controllers\VisiteurController@getLogin');
 Route::post('/Login', 'App\Http\Controllers\VisiteurController@signIn');
 
 Route::get('/getLogin', 'App\Http\Controllers\VisiteurController@signOut');
+
+Route::get('/listeFrais', 'App\Http\Controllers\FraisController@getFraisVisiteur');
+
+Route::get('/modifierFrais', 'App\Http\Controllers\FraisController@getModifierFrais');
+
+Route::post('/validerFrais/{id}', 'App\Http\Controllers\FraisController@validerFrais');
